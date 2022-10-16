@@ -2,7 +2,7 @@ import { UserContext, TestContext } from './App'
 import { useContext } from 'react'
 
 export const Child = () => {
-  const user = useContext(TestContext)
+  const user: string = useContext(TestContext)
   return (
       <div>
         <h1>{user}</h1>
