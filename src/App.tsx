@@ -1,5 +1,5 @@
-// import logo from './logo.svg'
-import './App.css'
+import logo from './logo.svg'
+import styles from './App.module.scss'
 import React from 'react'
 import { Child } from './Child'
 
@@ -7,6 +7,7 @@ export const UserContext = React.createContext('')
 export const TestContext = React.createContext('Test')
 
 function App() {
+  console.log(styles)
   /**
    * useContext
    * 使用场景：
@@ -22,6 +23,7 @@ function App() {
 
   return (
       <div className="App">
+        <img src={logo} className={styles.img} alt="" />
         {/* 这种写法可以使用，但是如果存在多个Context，代码可读性会变差
          所以建议使用useContext */}
         <UserContext.Provider value={'Eternity'}>
