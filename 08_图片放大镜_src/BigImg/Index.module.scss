@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+
+  .img {
+    width: 496px;
+    height: 310px;
+
+    img {
+      position: absolute;
+      z-index: -99;
+      height: 100%;
+    }
+  }
+
+  .mask {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    z-index: 100;
+    background: rgba(0, 0, 255, 0.31);
+    display: none;
+  }
+
+  .big {
+    position: absolute;
+    width: 310px;
+    height: 310px;
+    background: green;
+    display: none;
+  }
+}
